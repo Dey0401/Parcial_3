@@ -64,7 +64,7 @@ namespace apiParcial3.Clases
             }
         }
 
-        private void hallarDatos()
+        public void hallarDatos()
         {
             //Invoca los dos metodos anteriores y encuentra el valor total a pagar 
             if (!Validar())
