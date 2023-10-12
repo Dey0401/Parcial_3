@@ -10,7 +10,7 @@ using System.Web.Http.Cors;
 
 namespace apiParcial3.Controllers
 {
-    [EnableCors(origins: "http://localhost:XXXXX", headers: "*", methods: "*")]
+    [EnableCors(origins: "http://localhost:50481", headers: "*", methods: "*")]
     public class servParcialTresController : ApiController
     {
         // GET api/<controller>

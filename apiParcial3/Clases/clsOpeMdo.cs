@@ -10,7 +10,7 @@ namespace apiParcial3.Clases
     {
         //Crear los metoddos y la propiedad de entrada y salida
         //La propiedad es de tipo clase a partir de la clasee
-        modParcial3 objModMdo = new modParcial3();
+        //modParcial3 objModMdo = new modParcial3();
         public modParcial3 objModMdo
         { get; set; }
 
