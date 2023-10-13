@@ -1,86 +1,43 @@
-﻿<!DOCTYPE html>
+﻿<<!DOCTYPE html>
 <html>
 <head>
-    <title>Parcial #3 - Programación de Software</title>
+    <title>Parcial #3 - Mundo Interactivo S.A.</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center; font-weight: bold;">Parcial #3 - Programación de Software</h1>
-    <table style="width: 80%; border: 2px solid black; margin: 0 auto;">
-        <!-- Encabezado de la tabla -->
-        <tr>
-            <th>Columna 1</th>
-            <th>Columna 2</th>
-            <th>Columna 3</th>
-            <th>Columna 4</th>
-        </tr>
-        <!-- Filas de la tabla -->
-        <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-    </table>
-    <div style="text-align: center; margin-top: 20px;">
-        <button type="button" onclick="btnlimpiar()">Limpiar</button>
-        <button type="button" onclick="btnProcesar()">Procesar</button>
-        <script>
-            function limpiar() {
-                // Agrega aquí el código para limpiar los campos de entrada
-            }
+    <h1>Parcial #3 - Mundo Interactivo S.A.</h1>
+    <tr>
+        <td align="right" width="20%">Año 2022&nbsp;</td>
+        <td>&nbsp<input id="txtAño" type="text" /></td>
+    </tr>
 
-            function procesar() {
-                // Agrega aquí el código para procesar los datos de entrada
-            }
-        </script>
-    </div>
+    <tr>
+        <td align="right" width="20%">precio&nbsp;</td>
+        <td>&nbsp<input id="txtPrecio" type="text" /></td>
+    </tr>
+
+    <tr>
+        <td align="right" width="20%">Valor a pagar:&nbsp;</td>
+        <td>&nbsp<input id="txtVrAPag" type="text" readonly /></td>
+    </tr>
+
+    <td colspan="2" align="center">
+        <input id="btnLimpiar" type="button" value="Limpiar" />
+    </td>
+    <td colspan="2" align="center">
+        <input id="btnProcesar" type="button" value="Procesar" />
+    </td>
+    <br>
+
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/frmParcial3.js"></script>
 </body>
 </html>

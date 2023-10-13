@@ -11,7 +11,7 @@ using System.Web.Http.Cors;
 namespace apiParcial3.Controllers
 {
     [EnableCors(origins: "http://localhost:50481", headers: "*", methods: "*")]
-    public class servParcialTresController : ApiController
+    public class clsParcial3Controller : ApiController
     {
         // GET api/<controller>
         public IEnumerable<string> Get()
@@ -29,10 +29,10 @@ namespace apiParcial3.Controllers
         public modParcial3 Post([FromBody] modParcial3 objIN)
         {
             //Crea el objeto de la clase operativa (Clases/clsOpeMdo) clsOpeMdo
-            clsOpeMdo objOpe = new clsOpeMdo();
+            clsParcial3 objOpe = new clsParcial3();
             //Paso el parámetro/propiedad (objModMdo) de los datos del modelo
             objOpe.objModMdo = objIN;
-            objOpe.hallarDatos();
+            objOpe.infoDeRetorno();
             return objOpe.objModMdo;
         }
 

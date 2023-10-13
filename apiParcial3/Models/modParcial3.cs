@@ -11,30 +11,25 @@ namespace apiParcial3.Models
         #region costructor
         public modParcial3()
         {
-            this.tipoClasif = 0;
-            this.subtotal = 0;
-            this.porcDscto = 0;
-            this.vrDsto = 0;
-            this.vrAPagar = 0;
+            this.undVendidas = 0;
+            this.precioComputador = 0;
+            this.Año = 2022;
             Error = string.Empty;
         }
-        public modParcial3(int tipoClasif, float subtotal, float porcDscto, float vrDsto, float vrAPagar, string error)
+        public modParcial3(int undVendidas, float precioComputador, string error)
         {
-            this.tipoClasif = tipoClasif;
-            this.subtotal = subtotal;
-            this.porcDscto = porcDscto;
-            this.vrDsto = vrDsto;
-            this.vrAPagar = vrAPagar;
+            this.undVendidas = undVendidas;
+            this.precioComputador = precioComputador;
+            this.Año = 2022;
+            Error = string.Empty;
             Error = error;
         }
         #endregion
 
         #region Atributos/Propiedades
-        public int tipoClasif { get; set; }
-        public float subtotal { get; set; }
-        public float porcDscto { get; set; }
-        public float vrDsto { get; set; }
-        public float vrAPagar { get; set; }
+        public int undVendidas { get; set; }
+        public float precioComputador { get; set; }
+        public int Año { get; set; }
         public string Error { get; set; }
         #endregion
     }
